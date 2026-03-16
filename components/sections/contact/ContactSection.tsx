@@ -63,7 +63,16 @@ export default function ContactSection() {
                 setTimeout(() => setStatus("idle"), 5000);
             } else {
                 setStatus("error");
-                setErrorMessage(result.error || "Une erreur est survenue lors de l'envoi.");
+                
+                // Extract error string securely to avoid rendering objects in React
+                let errorMsg = "Une erreur est survenue lors de l'envoi.";
+                if (typeof result.error === "string") {
+                    errorMsg = result.error;
+                } else if (result.error && typeof result.error === "object" && result.error.message) {
+                    errorMsg = result.error.message;
+                }
+                
+                setErrorMessage(errorMsg);
                 setTimeout(() => setStatus("idle"), 8000);
             }
         } catch (error) {

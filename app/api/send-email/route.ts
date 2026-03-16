@@ -32,8 +32,8 @@ export async function POST(req: Request) {
 
     return Response.json({ success: true });
 
-  } catch (error) {
+  } catch (error: any) {
     console.error("EMAIL ERROR:", error);
-    return Response.json({ success: false, error });
+    return Response.json({ success: false, error: error.message || "Failed to send email" }, { status: 500 });
   }
 }

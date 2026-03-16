@@ -76,8 +76,10 @@ export default function Navbar() {
                         </Link>
                     ))}
                     <motion.a
-                        href="/assets/Hosana_Zitti_CV.pdf"
+                        href="/cv/Hosana_Zitti_CV.pdf"
                         download
+                        target="_blank"
+                        rel="noopener noreferrer"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         className="px-6 py-2.5 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 text-white text-xs font-bold uppercase tracking-widest shadow-lg shadow-indigo-500/20 flex items-center gap-2 hover:shadow-indigo-500/40 transition-shadow"
@@ -133,8 +135,10 @@ export default function Navbar() {
                                 className="mt-4"
                             >
                                 <motion.a
-                                    href="/assets/Hosana_Zitti_CV.pdf"
+                                    href="/cv/Hosana_Zitti_CV.pdf"
                                     download
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     onClick={() => setIsOpen(false)}
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
