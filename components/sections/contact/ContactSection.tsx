@@ -99,7 +99,7 @@ export default function ContactSection() {
                         transition={{ duration: 0.8 }}
                     >
                         <h2 className="text-5xl md:text-8xl font-black tracking-tighter mb-8 leading-none">
-                            GET IN <br /> <span className="text-zinc-600">TOUCH.</span>
+                           Me  <br /> <span className="text-zinc-600">contacter</span>
                         </h2>
                         <p className="text-zinc-400 text-lg md:text-xl font-light mb-12 max-w-md leading-relaxed">
                             Avez-vous un projet en tête? Créons ensemble quelque chose d'extraordinaire.
